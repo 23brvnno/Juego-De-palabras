@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordMaster Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="sidebar">
+            <div class="player-info">
+                <div class="avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="player-stats">
+                    <h3 class="player-name">Jugador</h3>
+                    <div class="level">Nivel <span class="level-number">1</span></div>
+                    <div class="xp-bar">
+                        <div class="xp-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-stats">
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span class="score-value">0</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span class="time-value">60</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-bolt"></i>
+                    <span class="streak-value">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-game">
+            <div class="game-header">
+                <h1>WordMaster Pro</h1>
+                <div class="mode-selector">
+                    <button class="mode-btn active" data-mode="normal">Normal</button>
+                    <button class="mode-btn" data-mode="time">Contrarreloj</button>
+                </div>
+            </div>
+            
+            <div class="game-container">
+                <div class="difficulty">
+                    <span class="difficulty-label">Dificultad:</span>
+                    <div class="difficulty-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="word-container">
+                    <div class="word-display"></div>
+                    <div class="letter-buttons"></div>
+                </div>
+                
+                <div class="hint-container">
+                    <p class="hint-text"></p>
+                    <div class="powerups">
+                        <button class="powerup-btn hint-btn" data-tooltip="Mostrar pista">
+                            <i class="fas fa-lightbulb"></i>
+                        </button>
+                        <button class="powerup-btn shuffle-btn" data-tooltip="Reordenar letras">
+                            <i class="fas fa-random"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="input-container">
+                    <input type="text" class="word-input" placeholder="Escribe tu respuesta">
+                    <button class="submit-btn">Comprobar</button>
+                </div>
+            </div>
+            
+            <div class="game-footer">
+                <div class="category">Categoría: <span class="category-name">General</span></div>
+                <div class="stats-summary">
+                    Aciertos: <span class="correct-count">0</span> | 
+                    Fallos: <span class="wrong-count">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
